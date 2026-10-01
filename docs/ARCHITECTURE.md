@@ -3,6 +3,17 @@
 ## 1. Overview
 The portfolio is a static website. Pages are generated at build time by Next.js, then served as plain files from a CDN. Every push to `main` is checked by automated tests and then deployed.
 
+
+```mermaid
+flowchart LR
+    A[VS Code] --> B[GitHub repo]
+    B --> C[GitHub Actions<br/>lint, types, tests]
+    C --> D[Vercel build<br/>Next.js]
+    D --> E[CDN<br/>static files]
+    E --> F[Visitor's browser]
+```
+
+
 ## 2. Tech stack
 
 | Layer | Choice | Why |
