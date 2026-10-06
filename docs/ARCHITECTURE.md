@@ -170,7 +170,7 @@ Tokens are named by purpose, not by appearance. Components use these names only,
 | `text`              | `#13202C` | `#E7EEF4` | Main text                           |
 | `text-muted`        | `#5A6B7A` | `#93A4B4` | Secondary text                      |
 | `border`            | `#D5DDE4` | `#26364A` | Dividers and card outlines          |
-| `border-control`    | `#8A9AA8` | `#4A5F75` | Buttons, toggles and filter chips   |
+| `border-control`    | `#728291` | `#5f7690` | Buttons, toggles and filter chips   |
 | `accent`            | `#0B6E8E` | `#4FB8D6` | Links, primary buttons, highlights  |
 | `on-accent`         | `#FFFFFF` | `#0E1620` | Text placed on an accent background |
 | `focus-ring`        | `#0B6E8E` | `#4FB8D6` | Keyboard focus outline              |
@@ -203,7 +203,7 @@ Tokens are named by purpose, not by appearance. Components use these names only,
 
 ### Open item
 
-Contrast ratios for the values above have not been measured yet. Verify them with a contrast checker before Phase 3, and adjust any value that fails.
+Contrast ratios were measured, and that border-control was raised to pass 3:1.
 
 ## 10. Testing strategy
 
