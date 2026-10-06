@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* follow the device by default */
+  color-scheme: light dark;
+
+  --bg: light-dark(#f4f6f8, #0e1620);
+  --surface: light-dark(#ffffff, #16212d);
+  --text: light-dark(#13202c, #e7eef4);
+  --text-muted: light-dark(#5a6b7a, #93a4b4);
+  --border: light-dark(#d5dde4, #26364a);
+  --border-control: light-dark(#8a9aa8, #4a5f75);
+  --accent: light-dark(#0b6e8e, #4fb8d6);
+  --on-accent: light-dark(#ffffff, #0e1620);
+  --focus-ring: light-dark(#0b6e8e, #4fb8d6);
+  --level-comfortable: light-dark(#0b6e8e, #4fb8d6);
+  --level-working: light-dark(#b7791f, #f0a94e);
+  --level-learning: light-dark(#6b7b89, #7a8a9a);
+}
+
+/* the visitor's choice overrides the device */
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-border-control: var(--border-control);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-focus-ring: var(--focus-ring);
+  --color-level-comfortable: var(--level-comfortable);
+  --color-level-working: var(--level-working);
+  --color-level-learning: var(--level-learning);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
