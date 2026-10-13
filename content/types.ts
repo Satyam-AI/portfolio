@@ -29,3 +29,10 @@ export type Skill = {
   path: string;
   evidence?: string[];
 };
+
+export type Experience = {
+  company: string;
+  role: string;
+  period: string;
+  summary: string;
+};
