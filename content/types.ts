@@ -1,11 +1,14 @@
 export type Level = "learning" | "working" | "comfortable";
 
-export type Tag = "Testing" | "Development";
+export type Tag = "Testing" | "Development" | "AI/ML";
 
 export type Profile = {
   name: string;
   headline: string;
+  summary: string;
+  education: string;
   email: string;
+  mobile: string;
   githubUrl: string;
   linkedinUrl: string;
   youtubeUrl?: string;
@@ -21,6 +24,7 @@ export type Project = {
   codeUrl: string;
   demoUrl?: string;
   image?: string;
+  featured?: boolean;
 };
 
 export type Skill = {
