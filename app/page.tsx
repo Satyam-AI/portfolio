@@ -1,3 +1,5 @@
+import ExperienceList from "@/components/ExperienceList";
+import { experience } from "@/content/experience";
 import Hero from "@/components/Hero";
 import ProjectList from "@/components/ProjectList";
 import SkillTree from "@/components/SkillTree";
@@ -27,6 +29,13 @@ export default function Home() {
           Things I have built, with the code for each.
         </p>
         <ProjectList projects={orderedProjects} />
+      </section>
+      <section id="experience" className="py-12">
+        <h2 className="text-2xl font-bold text-text sm:text-3xl">Experience</h2>
+        <p className="mt-2 mb-6 text-text-muted">
+          Where I have worked, newest first.
+        </p>
+        <ExperienceList entries={experience} />
       </section>
     </>
   );
