@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectList from "@/components/ProjectList";
 import SkillTree from "@/components/SkillTree";
 import { projects } from "@/content/projects";
 import { skills } from "@/content/skills";
@@ -26,11 +26,7 @@ export default function Home() {
         <p className="mt-2 mb-6 text-text-muted">
           Things I have built, with the code for each.
         </p>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {orderedProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
+        <ProjectList projects={orderedProjects} />
       </section>
     </>
   );
