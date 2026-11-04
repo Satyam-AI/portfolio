@@ -12,6 +12,7 @@ export type Profile = {
   githubUrl: string;
   linkedinUrl: string;
   youtubeUrl?: string;
+  leetcodeUrl?: string;
   resumePath: string;
 };
 

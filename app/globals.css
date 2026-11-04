@@ -13,6 +13,7 @@
   --accent: light-dark(#0b6e8e, #4fb8d6);
   --on-accent: light-dark(#ffffff, #0e1620);
   --focus-ring: light-dark(#0b6e8e, #4fb8d6);
+  --success: light-dark(#15803d, #4ade80);
   --level-comfortable: light-dark(#0b6e8e, #4fb8d6);
   --level-working: light-dark(#b7791f, #f0a94e);
   --level-learning: light-dark(#6b7b89, #7a8a9a);
@@ -36,6 +37,7 @@
   --color-accent: var(--accent);
   --color-on-accent: var(--on-accent);
   --color-focus-ring: var(--focus-ring);
+  --color-success: var(--success);
   --color-level-comfortable: var(--level-comfortable);
   --color-level-working: var(--level-working);
   --color-level-learning: var(--level-learning);

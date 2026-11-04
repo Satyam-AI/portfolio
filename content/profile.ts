@@ -11,5 +11,6 @@ export const profile: Profile = {
   mobile: "7992370408",
   githubUrl: "https://github.com/Satyam-AI",
   linkedinUrl: "https://www.linkedin.com/in/satyam-kumar-b40b04168/",
+  leetcodeUrl: "https://leetcode.com/u/satyam-ai/",
   resumePath: "/resume.pdf",
 };
