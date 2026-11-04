@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import ExperienceList from "@/components/ExperienceList";
 import { experience } from "@/content/experience";
 import Hero from "@/components/Hero";
@@ -37,6 +38,7 @@ export default function Home() {
         </p>
         <ExperienceList entries={experience} />
       </section>
+      <Contact />
     </>
   );
 }
