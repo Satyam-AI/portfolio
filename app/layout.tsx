@@ -38,11 +38,21 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full flex flex-col">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-accent focus:px-4 focus:py-2 focus:font-medium focus:text-on-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus-ring"
+        >
+          Skip to content
+        </a>
         <header className="mx-auto flex w-full max-w-[960px] items-center justify-between px-4 py-4">
           <p className="font-bold">Satyam</p>
           <ThemeToggle />
         </header>
-        <main className="mx-auto w-full max-w-[960px] flex-1 px-4 py-8">
+        <main
+          id="main"
+          tabIndex={-1}
+          className="mx-auto w-full max-w-[960px] flex-1 px-4 py-8 focus:outline-none"
+        >
           {children}
         </main>
         <footer className="mx-auto w-full max-w-[960px] px-4 py-8">
